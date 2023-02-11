@@ -1,5 +1,5 @@
 // Create sprite
-const CreateSprite = (className, width, height, bg, sercle, pushTo) =>
+function CreateSprite(className, width, height, bg, sercle, pushTo)
 {
 	var _sprite = document.createElement('div');
 	_sprite.className.add(className);
