@@ -1,3 +1,5 @@
+
+//dadasdasdasdasd
 class CreateSprite
 {
 	constructor(className, width, height, bg, sercle, pushTo){
