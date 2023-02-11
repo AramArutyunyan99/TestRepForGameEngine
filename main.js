@@ -1,23 +1,12 @@
-export class CreateSprite
+// Create sprite
+const CreateSprite = (className, width, height, bg, sercle, pushTo) =>
 {
-	constructor(className, width, height, bg, sercle, pushTo){
-		this.className = className;
-		this.width = width;
-		this.height = height;
-		this.bg = bg;
-		this.sercle = sercle;
-		this.pushTo = pushTo;
-	}
-	createColorBlock() {
-		var _block = document.createElement('div');
-		_block.classList.add(this.className);
-		_block.style.width = this.width + 'px';
-		_block.style.height = this.height + 'px';
-		_block.style.background = this.bg;
-		if (this.sercle == true){
-			_block.style.borderRadius = 100 + '%';
-		}
-		this.pushTo.append(_block);
-	}
+	var _sprite = document.createElement('div');
+	_sprite.className.add(className);
+	_sprite.style.width = width + 'px';
+	_sprite.style.height = height + 'px';
+	_sprite.style.background = bg;
+	if(sercle == true) _sprite.style.borderRadius = 100 + '%';
+	pushTo.append(_sprite);
 }
 
