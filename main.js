@@ -1,6 +1,4 @@
-var _Main = document.getElementById('__game__');
-// Класс страйтов [Блок, Круг]
-export class CreateSprite
+class CreateSprite
 {
 	constructor(className, width, height, bg, sercle, pushTo){
 		this.className = className;
